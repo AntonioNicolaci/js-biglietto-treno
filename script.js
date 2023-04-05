@@ -1,16 +1,18 @@
-/*
-chiedere i km.
-chiedere l'età.
-
-se età è minore di 18: sconto 20%
-se età è maggiore di 65: sconto 40%
-
-*/
-
-const age = parseInt(prompt("Qual è la tua età?"));
-const km = parseInt(prompt("Quanti chilomentri devi percorrere?"));
-const costo_biglietto = (0.21 * km);
+let age = new Number(prompt("Qual è la tua età?"));
+let km = new Number(prompt("Quanti chilomentri devi percorrere?"));
+let costo_biglietto = 0;
 let costo_finale = 0;
+
+if(isNaN(age)){
+    age = Number(prompt("Non hai inserito un valore valido. Per favore, scrivi la tua età"));
+}
+// Volevo fare il controllo dei caratteri, ma non avendo ancora fatto il ciclo while non posso farlo perfetto, nel dubbio lo lascio
+if(isNaN(km)){
+    age = Number(prompt("Non hai inserito un valore valido. Per favore, scrivi quanti chilometri devi percorrere"));
+} else{
+    costo_biglietto = (0.21 * km);
+}
+// Volevo fare il controllo dei caratteri, ma non avendo ancora fatto il ciclo while non posso farlo perfetto, nel dubbio lo lascio
 
 if(age < 18){
     costo_finale = costo_biglietto - (costo_biglietto * (20/100));
