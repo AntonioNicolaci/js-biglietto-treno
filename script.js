@@ -6,13 +6,14 @@ let costo_finale = 0;
 if(isNaN(age)){
     age = Number(prompt("Non hai inserito un valore valido. Per favore, scrivi la tua età"));
 }
-// Volevo fare il controllo dei caratteri, ma non avendo ancora fatto il ciclo while non posso farlo perfetto, nel dubbio lo lascio
+// Volevo fare il controllo dei caratteri, ma non avendo ancora fatto il ciclo while non posso farlo perfetto, nel dubbio lo lascio perché mi piace
 if(isNaN(km)){
-    age = Number(prompt("Non hai inserito un valore valido. Per favore, scrivi quanti chilometri devi percorrere"));
+    km = Number(prompt("Non hai inserito un valore valido. Per favore, scrivi quanti chilometri devi percorrere"));
+    costo_biglietto = (0.21 * km);
 } else{
     costo_biglietto = (0.21 * km);
 }
-// Volevo fare il controllo dei caratteri, ma non avendo ancora fatto il ciclo while non posso farlo perfetto, nel dubbio lo lascio
+// Volevo fare il controllo dei caratteri, ma non avendo ancora fatto il ciclo while non posso farlo perfetto, nel dubbio lo lascio perché mi piace
 
 if(age < 18){
     costo_finale = costo_biglietto - (costo_biglietto * (20/100));
